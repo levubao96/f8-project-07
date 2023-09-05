@@ -1,0 +1,79 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 62.5%;
+    font-family: "Open Sans", sans-serif;
+}
+
+input,
+button,
+select,
+textarea {
+    font-family: inherit;
+    font-size: inherit;
+}
+
+/* Common */
+.container {
+    width: 1170px;
+    max-width: calc(100% - 52px);
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    display: inline-block;
+    min-height: 52px;
+    min-width: 113px;
+    border-radius: 8px;
+    background: #212832;
+    color: #fff;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.75;
+}
+
+h2 {
+    color: #212832;
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1.25;
+}
+
+.section-tag {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+    color: #696d77;
+    line-height: 1.75;
+}
+
+.section-tag::before {
+    content: "";
+    display: inline-block;
+    width: 18px;
+    height: 2px;
+}
+
+.section-desc--normal {
+    margin-top: 18px;
+    color: #696d76;
+    font-size: 1.8rem;
+    line-height: 1.67;
+}
+
+.section-desc--small {
+    margin-top: 16px;
+    color: #696d76;
+    line-height: 1.75;
+}
