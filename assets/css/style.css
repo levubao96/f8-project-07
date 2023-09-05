@@ -4,11 +4,12 @@
 
 html {
     scroll-behavior: smooth;
+    font-size: 62.5%;
 }
 
 body {
-    font-size: 62.5%;
     font-family: "Open Sans", sans-serif;
+    background: #fff;
 }
 
 input,
@@ -31,15 +32,22 @@ a {
 }
 
 .btn {
-    display: inline-block;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
     min-height: 52px;
     min-width: 113px;
     border-radius: 8px;
-    background: #212832;
+    font-size: 1.6rem;
     color: #fff;
-    text-align: center;
+    background: #212832;
     font-weight: 600;
     line-height: 1.75;
+    transition: opacity 500ms;
+}
+
+.btn:hover {
+    opacity: 0.85;
 }
 
 h2 {
@@ -54,6 +62,7 @@ h2 {
     align-items: center;
     gap: 12px;
     margin-bottom: 12px;
+    font-size: 1.6rem;
     color: #696d77;
     line-height: 1.75;
 }
@@ -74,6 +83,78 @@ h2 {
 
 .section-desc--small {
     margin-top: 16px;
+    font-size: 1.6rem;
     color: #696d76;
     line-height: 1.75;
+}
+
+/* Header */
+
+.header {
+    position: sticky;
+    top: -32px;
+    padding: 42px 0 10px;
+    z-index: 999;
+}
+
+.header__inner {
+    display: flex;
+    align-items: center;
+}
+
+.logo__wrap {
+    padding: 12px 12px 12px 0;
+    margin-right: 42px;
+}
+
+.logo {
+    height: 24px;
+}
+
+.navbar__menu-list {
+    display: flex;
+    gap: 16px;
+}
+
+.navbar__link {
+    padding: 10px 16px;
+    font-size: 1.6rem;
+    color: #696d76;
+    line-height: 1.75;
+    transition: text-decoration 500ms;
+}
+
+.navbar__link--active {
+    color: #212832;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.75;
+}
+
+.navbar__link:hover,
+.navbar__link--active {
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+
+.header__cta-list {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.header__cta-link {
+    display: inline-block;
+    padding: 10px 16px;
+    color: #212832;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.75;
+    transition: text-decoration 500ms;
+}
+
+.header__cta-link:hover {
+    text-decoration: underline;
+    text-underline-offset: 5px;
 }
