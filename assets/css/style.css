@@ -463,3 +463,89 @@ h2 {
 .hero__media-item-4 p:last-of-type {
     font-size: 0.8rem;
 }
+
+/* Benefit */
+.benefit {
+    padding: 80px 0;
+}
+
+.benefit__inner {
+    display: flex;
+    align-items: center;
+}
+
+.benefit__media {
+    position: relative;
+    flex-shrink: 0;
+    width: 48.71%;
+}
+
+.benefit__img-wrap {
+    position: relative;
+    height: 619px;
+    width: 470px;
+    padding: 0 7px;
+    background: url(../img/benefit-bg.png);
+    background-position: center 100%;
+    background-repeat: no-repeat;
+}
+
+.benefit__img {
+    width: 100%;
+    display: block;
+}
+
+.benefit__img-decor {
+    position: absolute;
+    top: 76px;
+    right: 55px;
+}
+
+.benefit__img-block {
+    position: absolute;
+    right: 0;
+    bottom: 96px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 226px;
+    height: 70px;
+    padding: 15px;
+    border-radius: 8px;
+    background: #fffdfa;
+    box-shadow: 0px 14px 34px 0px rgba(0, 0, 0, 0.07);
+    font-family: "Inter", sans-serif;
+}
+
+.benefit__content {
+    width: 51.29%;
+    padding-left: 130px;
+    flex-shrink: 0;
+}
+
+.benefit__img-block p:first-of-type {
+    color: #212832;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.benefit__img-block p:last-of-type {
+    margin-top: 5px;
+    color: #696d76;
+    font-size: 1.2rem;
+}
+
+.benefit__list {
+    margin-top: 70px;
+}
+
+.benefit__item {
+    margin-top: 30px;
+}
+
+.benefit__item-heading {
+    color: #212832;
+    font-size: 2.2rem;
+    font-weight: 600;
+    line-height: 1.4546;
+}
